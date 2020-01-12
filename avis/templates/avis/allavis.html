@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Tiago De Freitas · Bootstrap</title>
+    <title>Tiago De Freitas</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
@@ -46,20 +47,20 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Tiago De Freitas</a>
+    <a class="navbar-brand" href="http://127.0.0.1:8000/">Tiago De Freitas</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Facebook <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="https://www.facebook.com/tiago.defreitas">Facebook <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resume</a>
+          <a class="nav-link" href="https://github.com/TiagoDeFreitas">GitHub</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Blog</a>
+          <a class="nav-link active" href="">Blog</a>
         </li>
       </ul>
     </div>
@@ -76,7 +77,7 @@
 
   {% for post in posts.all %}
 
-  <a href=""><h3> {{ post.title }} </h3></a>
+  <a href="{% url 'detail' post.id %}"><h3> {{ post.title }} </h3></a>
   {{ post.pub_date_pretty }}
   <br/>
   <img class="img-fluid" src="{{ post.image.url }}" height=200 width=200 />

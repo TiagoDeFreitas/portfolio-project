@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Tiago De Freitas · Bootstrap</title>
+    <title>Tiago De Freitas</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
@@ -53,10 +54,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Facebook <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="https://www.facebook.com/tiago.defreitas">Facebook <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resume</a>
+          <a class="nav-link" href="https://github.com/TiagoDeFreitas">GitHub</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="avis">Blog</a>
@@ -75,6 +76,7 @@
       <p>
         <a href="mailto:tiago13scp@gmail.com" class="btn btn-primary my-2">Email Me</a>
       </p>
+      <img class="img-fluid" src="{% static 'oss.jpg' %}" height="300" width="300"/>
     </div>
   </section>
 
